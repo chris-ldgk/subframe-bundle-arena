@@ -7,10 +7,11 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "bun --filter './apps/*' dev",
-    "build": "bun --filter './apps/*' build",
+    "clean:deps": "rm -rf node_modules **/node_modules bun.lock **/bun.lock",
+    "dev": "bun run clean:deps && bun install && bun --filter './apps/*' dev",
+    "build": "bun run clean:deps && bun install && bun --filter './apps/*' build",
     "preview": "bun --filter './apps/*' preview",
-    "analyze": "bun --filter './apps/*' analyze"
+    "analyze": "bun run clean:deps && bun install && bun --filter './apps/*' analyze"
   },
   "devDependencies": {
     "@types/bun": "latest"
