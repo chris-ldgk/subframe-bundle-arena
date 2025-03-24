@@ -1,0 +1,83 @@
+@subframe/core 1.137.0 - icons by name
+    no treeshaking options
+        client bundle around 350kb gzipped
+    aggressive treeshaking
+        astro and vite - ~140kb gzipped
+        nextjs and cra - ~350kb gzipped
+
+@subframe/core 1.139.0 
+    icons by name
+        no treeshaking options
+            client bundle around 350kb gzipped
+        aggressive treeshaking
+            vite and astro: ~140kb gzipped
+            next and cra: no difference
+    icons by direct import
+        no treeshaking options
+            client bundle around 350kb gzipped
+        aggressive treeshaking
+            vite and astro (vite based): ~70kb gzipped - "vite.build.rollupOptions.treeshaking" = "smallest"
+            NextJS and CRA: no difference - ~350kb gzipped
+
+@subframe/core 1.139.0 modified - no icon component export, only icons by import
+    icons by name - not possible anymore
+    icons by direct import
+        no treeshaking options
+            client bundle around 350kb gzipped - seems to be no difference in size
+        aggressive treeshaking
+            vite and astro (vite based): ~70kb gzipped - "vite.build.rollupOptions.treeshaking" = "smallest"
+            NextJS and CRA: no difference - ~350kb gzipped
+
+@subframe/core 1.139.0 modified - side effects false
+    icons by direct import
+        no treeshaking options
+            cra - ~120kb gzipped
+            next - ~300kb gzipped
+            vite and astro - ~330kb gzipped
+        aggressive tresshaking
+            cra and nextjs - ~120kb gzipped
+            vite and astro - ~70kb gzipped 
+    icons by name
+        no treeshaking options
+            vite and astro - 330kb gzipped
+            cra - 192kb gzipped
+            next - 383kb gzipped
+        aggressive treeshaking
+            cra and nextjs - ~140kb gzipped
+            vite and astro - ~140kb gzipped
+
+@subframe/core 1.139.0 modified - icon react.lazy
+    icons by direct import 
+        no treeshaking options
+            astro and vite - ~260kb gzipped
+            cra - ~120kb gzipped
+            next - ~314kb gzipped
+        aggressive treeshaking
+            astro and vite - ~70kb gzipped
+            cra and next - ~120kb gzipped
+    icons by name
+        no treeshaking options
+            astro and vite - broken
+            cra - ~150kb gzipped
+            next - ~350kb gzipped
+        aggressive treeshaking
+            cra and next - ~150kb gzipped
+            vite and astro - broken
+
+@subframe/core 1.139.0 modified - minimal changes to for treeshaking
+    icons by direct import
+        no treeshaking options
+            vite and astro - ~260kb gzipped
+            cra - ~120kb gzipped
+            next - ~314kb gzipped
+        aggressive treeshaking
+            vite and astro - ~70kb gzipped
+            cra and next - ~120kb gzipped
+    icons by name
+        no treeshaking options
+            vite and astro - ~330kb gzipped
+            cra - ~192kb gzipped
+            next - ~380kb gzipped
+        aggressive treeshaking
+            vite and astro - ~140kb gzipped
+            cra and next - ~190kb gzipped

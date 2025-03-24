@@ -16,7 +16,7 @@ export function TestComponent() {
           favoriteButtonSlot={<TrackCard.FavoriteButton />}
           imageSlot={
             <img
-              className="flex-none"
+              className="object-cover h-full"
               src="https://res.cloudinary.com/subframe/image/upload/v1741969641/uploads/925/oefuaafkotek1wqlmpyz.jpg"
             />
           }
@@ -29,7 +29,7 @@ export function TestComponent() {
           favoriteButtonSlot={<TrackCard.FavoriteButton />}
           imageSlot={
             <img
-              className="flex-none"
+              className="object-cover h-full"
               src="https://res.cloudinary.com/subframe/image/upload/v1741971326/uploads/925/psbp3yk4p0ajtdhfq4ne.jpg"
             />
           }
@@ -42,7 +42,7 @@ export function TestComponent() {
           favoriteButtonSlot={<TrackCard.FavoriteButton />}
           imageSlot={
             <img
-              className="flex-none"
+              className="object-cover h-full"
               src="https://res.cloudinary.com/subframe/image/upload/v1741974378/uploads/925/rt3t7s6urpctha82h9ip.jpg"
             />
           }

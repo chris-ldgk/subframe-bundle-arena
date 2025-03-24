@@ -10,6 +10,11 @@ export default defineConfig({
     port: 3000,
   },
   vite: {
+    build: {
+      rollupOptions: {
+        // treeshake: "smallest",
+      },
+    },
     plugins: [
       process.env.ANALYZE === "true"
         ? visualizer({

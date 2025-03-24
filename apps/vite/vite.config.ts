@@ -12,6 +12,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
+      // treeshake: "smallest",
       plugins: [
         process.env.ANALYZE === "true"
           ? visualizer({

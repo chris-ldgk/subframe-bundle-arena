@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "clean:deps": "rm -rf node_modules **/node_modules bun.lock **/bun.lock",
+    "clean:deps": "rm -rf node_modules **/node_modules bun.lock **/bun.lock apps/next/.next",
     "dev": "bun run clean:deps && bun install && bun --filter './apps/*' dev",
     "build": "bun run clean:deps && bun install && bun --filter './apps/*' build",
     "preview": "bun --filter './apps/*' preview",
