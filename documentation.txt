@@ -81,3 +81,23 @@
         aggressive treeshaking
             vite and astro - ~140kb gzipped
             cra and next - ~190kb gzipped
+
+@subframe/core 1.140.0
+    icons by direct import
+        no treeshaking options
+            vite and astro - 263kb gzipped
+            cra - 120kb gzipped
+            next - 314kb gzipped
+        aggressive treeshaking
+            vite and astro - 70kb gzipped
+            cra - 120kb gzipped
+            next - 114kb gzipped
+    icons by name
+        no treeshaking options
+            vite and astro - 334kb gzipped
+            cra - 192kb gzipped
+            next - 384kb gzipped
+        aggressive treeshaking
+            vite and astro - 140kb gzipped
+            cra - 192kb gzipped
+            next - 187kb gzipped
